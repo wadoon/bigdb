@@ -1,3 +1,11 @@
+"""
+Good resources:
+
+* Gdk: https://lazka.github.io/pgi-docs/Gdk-3.0/classes/
+* Gtk: https://lazka.github.io/pgi-docs/Gdk-3.0/classes/
+* Gtk Tutorial: http://python-gtk-3-tutorial.readthedocs.io/
+* GtkSource: https://lazka.github.io/pgi-docs/GtkSource-3.0/
+"""
 import gi
 import os
 import sys
@@ -13,6 +21,10 @@ gi.require_version('GtkSource', '3.0')  # noqa
 from gi.repository import Gdk, Gtk, GObject, GtkSource, Gio
 
 from pygdbmi.gdbcontroller import GdbController, GdbTimeoutError
+
+__author__ = "Alexander Weigl"
+__email__ = "weigl@kit.edu"
+__version__ = "0.1"
 
 CATEGORY_BREAKPOINT = "BREAKPOINT"
 NAME_EXEC_MARKER = "EXEC_MAKER"
